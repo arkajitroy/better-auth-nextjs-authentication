@@ -132,7 +132,9 @@ export default function LoginPage() {
 
             <Button
               type="submit"
-              className="w-full h-11 bg-gradient-to-r from-blue-700 to-rose-600 hover:from-blue-900 hover:to-black transition-colors duration-400"
+              className="w-full h-11 text-white font-semibold bg-gradient-to-r from-rose-800 via-violet-800 to-slate-900
+             hover:from-rose-900 hover:via-violet-900 hover:to-black
+             transition-colors duration-300 rounded-lg shadow-lg"
               disabled={isLoading || failedAttempts >= 3}
             >
               {isLoading ? "Signing in..." : "Sign in"}
@@ -170,7 +172,7 @@ export default function LoginPage() {
 
           <div className="text-center text-sm">
             Don't have an account?{" "}
-            <Link href="/auth/signup" className="text-primary hover:underline font-medium">
+            <Link href="/signup" className="text-primary hover:underline font-medium">
               Sign up
             </Link>
           </div>
