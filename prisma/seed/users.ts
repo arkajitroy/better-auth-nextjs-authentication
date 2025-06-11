@@ -1,5 +1,5 @@
 import { hash } from "bcryptjs";
-import prisma from "@/services/db/prisma";
+import prisma from "@/services/db/config";
 
 async function main() {
   const passwordHash = await hash("Password123!", 10);
